@@ -1,0 +1,1 @@
+2021/06/02 09:44:35 [error] 33#33: *1 open() "/var/www/w-shop.test/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: w-shop.test, request: "GET /favicon.ico HTTP/1.1", host: "w-shop.test:8000", referrer: "http://w-shop.test:8000/"
