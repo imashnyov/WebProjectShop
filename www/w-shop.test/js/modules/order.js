@@ -62,9 +62,9 @@ var order = (function($) {
                 freeDelivery.enabled
                     ? 'Мы дарим Вам бесплатную доставку!'
                     :
-                        'Сумма доставки ' + deliverySumma + ' рублей. ' +
+                        'Сумма доставки ' + deliverySumma + ' гривен. ' +
                         'Общая сумма заказа: ' +
-                        cartSumma + ' + ' + deliverySumma + ' = ' + fullSumma + ' рублей';
+                        cartSumma + ' + ' + deliverySumma + ' = ' + fullSumma + ' гривен';
 
         ui.$delivery.type.val(deliveryType);
         ui.$delivery.summa.val(deliverySumma);

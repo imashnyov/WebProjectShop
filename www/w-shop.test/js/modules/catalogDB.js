@@ -64,7 +64,7 @@ var catalogDB = (function($) {
 
     // Обновление цен
     function _updatePricesUI(options) {
-        ui.$pricesLabel.html(options.minPrice + ' - ' + options.maxPrice + ' руб.');
+        ui.$pricesLabel.html(options.minPrice + ' - ' + options.maxPrice + ' грн.');
         ui.$minPrice.val(options.minPrice);
         ui.$maxPrice.val(options.maxPrice);
     }

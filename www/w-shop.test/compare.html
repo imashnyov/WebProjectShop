@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Webdevkin. Интернет-магазин. Сравнение товаров</title>
+    <title>Интернет-магазин. Сравнение товаров</title>
     <meta name="description" content="Тестовый интернет-магазин от webdevkin-a. Страница сравнения товаров" />
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -10,36 +10,7 @@
 </head>
 <body data-page="compare">
     <div class="container">
-        <h1>Сравнение товаров. Интернет-магазин shop.webdevkin.ru</h1>
-        <br />
-        Статьи на webdevkin-e. Читаем, разбираем, комментируем...
-        <br />
-        <br />
-        <a href="https://webdevkin.ru/posts/frontend/korzina-dlya-internet-magazina-na-fronte-ili-pishem-modulnyij-javascript" target="_blank">
-            "Корзина для интернет-магазина на фронте или Пишем модульный javascript".
-        </a>
-        <br />
-        <a href="https://webdevkin.ru/posts/backend/internet-magazin-realizuem-oformlenie-zakaza-na-kliente-i-servere" target="_blank">
-            "Реализуем отправку заказа в интернет-магазине на клиенте и сервере".
-        </a>
-        <br />
-        <a href="https://webdevkin.ru/posts/frontend/kak-dobavit-dostavku-v-internet-magazine" target="_blank">
-            "Как добавить доставку в интернет-магазине".
-        </a>
-        <br />
-        <a href="https://webdevkin.ru/posts/frontend/filtryi-i-sortirovka-v-internet-magazine-na-ajax-php-mysql" target="_blank">
-            "Фильтры и сортировка в интернет-магазине на ajax-php-mysql. Серия уроков".
-        </a>
-        <br />
-        <a href="https://webdevkin.ru/posts/frontend/sravnenie-tovarov-v-internet-magazine" target="_blank">
-            "Сравнение товаров в интернет-магазине".
-        </a>
-        <br />
-        <a href="https://webdevkin.ru/posts/frontend/postranichnaya-navigacziya" target="_blank">
-            "Постраничная навигация".
-        </a>
-        <br />
-        <br />
+        <h1>Сравнение товаров</h1>
         <br />
         <ul class="nav nav-pills">
             <li><a href="/">Каталог</a></li>
@@ -87,7 +58,7 @@
         <th>
             <div class="compare-table__good"><%= good.good %></div>
             <img class="compare-table__photo" src="/img/goods/<%= good.photo %>" />
-            <div class="compare-table__price"><%= good.price %> руб.</div>
+            <div class="compare-table__price"><%= good.price %> грн.</div>
             <div class="compare-table__remove js-compare-remove" data-id="<%= good.good_id %>">Удалить из сравнения</div>
         </th>
         <% }); %>

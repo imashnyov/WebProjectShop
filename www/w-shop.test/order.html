@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Webdevkin. Интернет-магазин. Заказ</title>
+    <title>Интернет-магазин. Заказ</title>
     <meta name="description" content="Тестовый интернет-магазин от webdevkin-a. Оформление заказа и отправка его на сервер" />
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -10,36 +10,7 @@
 </head>
 <body data-page="order">
     <div class="container">
-        <h1>Оформление заказа. Интернет-магазин shop.webdevkin.ru</h1>
-        <br />
-        Статьи на webdevkin-e. Читаем, разбираем, комментируем...
-        <br />
-        <br />
-        <a href="https://webdevkin.ru/posts/frontend/korzina-dlya-internet-magazina-na-fronte-ili-pishem-modulnyij-javascript" target="_blank">
-            "Корзина для интернет-магазина на фронте или Пишем модульный javascript".
-        </a>
-        <br />
-        <a href="https://webdevkin.ru/posts/backend/internet-magazin-realizuem-oformlenie-zakaza-na-kliente-i-servere" target="_blank">
-            "Реализуем отправку заказа в интернет-магазине на клиенте и сервере".
-        </a>
-        <br />
-        <a href="https://webdevkin.ru/posts/frontend/kak-dobavit-dostavku-v-internet-magazine" target="_blank">
-            "Как добавить доставку в интернет-магазине".
-        </a>
-        <br />
-        <a href="https://webdevkin.ru/posts/frontend/filtryi-i-sortirovka-v-internet-magazine-na-ajax-php-mysql" target="_blank">
-            "Фильтры и сортировка в интернет-магазине на ajax-php-mysql. Серия уроков".
-        </a>
-        <br />
-        <a href="https://webdevkin.ru/posts/frontend/sravnenie-tovarov-v-internet-magazine" target="_blank">
-            "Сравнение товаров в интернет-магазине".
-        </a>
-        <br />
-        <a href="https://webdevkin.ru/posts/frontend/postranichnaya-navigacziya" target="_blank">
-            "Постраничная навигация".
-        </a>
-        <br />
-        <br />
+        <h1>Оформление заказа</h1>
         <br />
         <ul class="nav nav-pills">
             <li><a href="/">Каталог</a></li>
@@ -82,10 +53,10 @@
                         <label><input type="radio" name="delivery" class="js-delivery-type" data-type="Самовывоз" data-summa="0" checked>Самовывоз (бесплатно)</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="delivery" class="js-delivery-type" data-type="В пределах КАД" data-summa="200">В пределах КАД (200 рублей)</label>
+                        <label><input type="radio" name="delivery" class="js-delivery-type" data-type="В пределах города" data-summa="200">В пределах города (200 гривен)</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="delivery" class="js-delivery-type" data-type="Почта России" data-summa="300">Доставка почтой России (300 рублей)</label>
+                        <label><input type="radio" name="delivery" class="js-delivery-type" data-type="УкрПочта" data-summa="300">Доставка почтой Украины (300 гривен)</label>
                     </div>
                     <br />
                     <div id="alert-delivery" class="alert alert-info"></div>
@@ -122,7 +93,7 @@
 
     <script id="order-message-template" type="text/template">
         <% if (count !== 0) { %>
-            В Вашей корзине <%= count %> товара(ов) на общую сумму <%= summa %> рублей.
+            В Вашей корзине <%= count %> товара(ов) на общую сумму <%= summa %> гривен.
             Заполните форму ниже и нажмите кнопку Отправить заказ.
         <% } else { %>
             Ваша корзина пуста. Перед отправкой заказа добавьте в корзину хотя бы один товар.
